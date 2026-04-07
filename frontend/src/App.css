@@ -1,0 +1,95 @@
+/* Apple TV inspired styles */
+
+.atv-hero-gradient {
+  background: linear-gradient(to top, #000000 0%, rgba(0, 0, 0, 0.85) 30%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+.atv-card {
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
+}
+
+.atv-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.08);
+  z-index: 10;
+}
+
+.atv-card img {
+  transition: opacity 0.3s ease;
+}
+
+.atv-nav {
+  background: rgba(0, 0, 0, 0.72);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+}
+
+.atv-btn-primary {
+  background: rgba(255, 255, 255, 1);
+  color: #000;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.atv-btn-primary:hover {
+  background: rgba(255, 255, 255, 0.85);
+  transform: scale(1.02);
+}
+
+.atv-btn-secondary {
+  background: rgba(255, 255, 255, 0.12);
+  color: #F5F5F7;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(10px);
+}
+
+.atv-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.atv-glass {
+  background: rgba(29, 29, 31, 0.72);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+}
+
+.atv-input {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #F5F5F7;
+  transition: all 0.2s ease;
+}
+
+.atv-input:focus {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(0, 113, 227, 0.6);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.15);
+}
+
+.atv-tag {
+  background: rgba(255, 255, 255, 0.08);
+  color: #A1A1A6;
+  transition: all 0.2s ease;
+}
+
+.atv-tag:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #F5F5F7;
+}
+
+@keyframes atv-fade-in {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.atv-animate-in {
+  animation: atv-fade-in 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.atv-row-scroll {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
